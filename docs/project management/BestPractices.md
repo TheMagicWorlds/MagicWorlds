@@ -46,7 +46,7 @@
 
 
 ## **8. Repository Structure & Organization**  
-- **Follow main [Magic World](https://github.com/MeetYourAI/MagicWorlds/tree/main) repo structure  
+- **Follow main [Magic Worlds](https://github.com/MeetYourAI/MagicWorlds/tree/main) repo structure  
 - **Use README files** in each doc folder of the subworld repo to document purpose, setup instructions, and guidelines.  
 
 ## **9. Code Review & Collaboration**  (suggestions for [Contributing](https://github.com/MeetYourAI/MagicWorlds/blob/main/docs/CONTRIBUTING.md))
