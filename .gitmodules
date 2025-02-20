@@ -1,0 +1,3 @@
+[submodule "AI Tools"]
+	path = AI Tools
+	url = https://github.com/MeetYourAI/MW-AI-tools
