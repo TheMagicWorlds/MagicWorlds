@@ -1,6 +1,6 @@
 # 📁 .github (`.github`)
 
-The `.github` directory contains configuration files for GitHub-specific features that help manage and streamline the development of **Magic World**.
+The `.github` directory contains configuration files for GitHub-specific features that help manage and streamline the development of **Magic Worlds**.
 
 ## 📂 Folder Structure
 ```
