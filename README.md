@@ -82,6 +82,29 @@ Magic Worlds utilizes **blockchain technology** for:
 5. **Track Progress** – Check leaderboards, achievements, and token earnings.
 
 ---
+## 📁Repository Structure
+
+```
+Magic-World/
+│── .github/                  # GitHub-specific settings
+│── docs/                     # Documentation
+│   ├── patch-notes/          # Patch notes for each version
+│   ├── README.md             # Project overview
+│   ├── CONTRIBUTING.md       # Contribution guidelines
+│── scripts/                  # Automation and deployment scripts
+│── src/                      # Source code for the main game
+│   ├── core/                 # Core game mechanics
+│   ├── assets/               # Global assets
+│   ├── engine/               # Game engine logic
+│── tests/                    # Testing framework
+│── worlds/                   # Sub-worlds stored as folders
+│   ├── music-world/          # Music World files
+│   ├── fashion-world/        # Fashion World files
+│   ├── sub-world/            # Additional sub-worlds files
+│── CHANGELOG.md              # Patch notes
+│── LICENSE                   # Open-source license
+│── README.md                 # Main repository overview
+```
 
 ## 🤝 Community Contributions
 Magic Worlds is an **open-source** project, and we welcome community engagement!
