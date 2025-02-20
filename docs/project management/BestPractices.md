@@ -6,8 +6,8 @@
 ## **1. Project Plan & Documentation**  
 - Maintain a **Project Roadmap** outlining key **milestones (World, AI bots, Tokens) deliverables, and deadlines.**  
 - Use GitHub **Wikis** or a `project-plan.md` file to store:  
-  - Project Roadmap (link)  
-  - Kanban Boards (link)  
+  - Project Roadmap ([template](https://github.com/orgs/MeetYourAI/projects/52))  
+  - Kanban Boards ([template](https://github.com/orgs/MeetYourAI/projects/53)) 
   - Other docs (link)
 
 ## **2. Kanban Board Usage**  
