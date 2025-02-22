@@ -2,3 +2,6 @@
 [submodule "AI/AI/AIProperty"]
 	path = AI/AI/AIProperty
 	url = https://github.com/MeetYourAI/AIProperty
+[submodule "AI/MusicAI"]
+	path = AI/MusicAI
+	url = https://github.com/MeetYourAI/MusicAI
