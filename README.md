@@ -89,6 +89,7 @@ Magic-World/
 │── .github/                  # GitHub-specific settings
 │── docs/                     # Documentation
 │   ├── patch-notes/          # Patch notes for each version
+│   ├── project-management/   # Project management documentation
 │   ├── README.md             # Project overview
 │   ├── CONTRIBUTING.md       # Contribution guidelines
 │── scripts/                  # Automation and deployment scripts
@@ -104,6 +105,7 @@ Magic-World/
 │── CHANGELOG.md              # Patch notes
 │── LICENSE                   # Open-source license
 │── README.md                 # Main repository overview
+
 ```
 
 ## 🤝 Community Contributions
