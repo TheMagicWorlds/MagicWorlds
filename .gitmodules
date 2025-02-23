@@ -8,3 +8,6 @@
 [submodule "AI/AI2Design"]
 	path = AI/AI2Design
 	url = https://github.com/MeetYourAI/AI2Design
+[submodule "AI/AIWriter"]
+	path = AI/AIWriter
+	url = https://github.com/MeetYourAI/AIWriter
