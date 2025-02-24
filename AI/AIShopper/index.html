@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AI Shopper Assistant</title>
+		<meta name="description" content="Discover the future of Shopping with our AI-driven solutions. Simplify your shopping, save money, and achieve a delightful experience. Elevate your shopping experience today!" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- fav icon -->
+		<link rel="icon" href="assets/images/fav-icon/fav-icon.png">
+		
+		<!-- bootstarp -->
+		<link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+		
+		<!-- animate.css file -->
+		<link rel="stylesheet" href="css/vendors/animate.css">
+		
+		<!-- Swiper -->
+		<link rel="stylesheet" href="css/vendors/swiper-bundle.min.css">
+		
+		<!-- flaticon -->
+		<link rel="stylesheet" href="css/vendors/flaticon/flaticon.css">
+		
+		<!-- fontAwesome -->
+		<link rel="stylesheet" href="css/vendors/all.min.css">
+		
+		<!-- bootstrap icons -->
+		<link rel="stylesheet" href="css/vendors/bootstrap-icons-1.9.1/bootstrap-icons.css">
+		
+		<!-- Fancybox -->
+		<link rel="stylesheet" href="css/vendors/jquery.fancybox.min.css">
+		
+		<!-- fonts site preconnect -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		
+		<!-- fonts site preconnect -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<!-- Font Family -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
+		
+		<!-- main-LTR -->
+		<link rel="stylesheet" href="css/main-LTR.css">
+		
+	<!-- chatbot stylesheet -->
+	<link rel="stylesheet" href="css/home.css">
+
+		<!-- Clarity Analytics Tracker -->
+
+		<script type="text/javascript">
+			(function(c,l,a,r,i,t,y){
+				c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+				t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+				y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+			})(window, document, "clarity", "script", "is58zwqcee");
+		</script>
+		
+	</head>
+	<body class=" dark-theme  landing-page-demo">
+		<!--Start Page Header-->
+		<header class=" header-basic" id="page-header">
+			<div class="container">
+				<!--Start navbar-->
+				<nav class="menu-navbar" id="main-nav">
+					<div class="header-logo"><a class="logo-link" href="#"><img class="logo-img light-logo" loading="lazy" src="assets/images/logo/yellowBgLogo.png" alt="logo"/><img class="logo-img  dark-logo" loading="lazy" src="assets/images/logo/yellowBgLogo.png" alt="logo"/></a></div>
+					<div class="links menu-wrapper ">
+						<ul class="list-js links-list">
+							<li class="nav-item menu-item has-sub-menu"><a class="nav-link menu-link   active" href="#page-hero">home</a></li>
+							<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#services">services </a></li>
+							<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#about">about </a></li>
+							<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#pricing">pricing </a></li>
+							<!-- <li class="nav-item menu-item"><a class="nav-link menu-link  " href="#testimonials">testimonials </a></li> -->
+							<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#faq">FAQ </a></li>
+							<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#contact-us">contact us </a></li>
+						</ul>
+					</div>
+					<div class="controls-box">
+						<!--Menu Toggler button-->
+						<div class="control  menu-toggler"><span></span><span></span><span></span></div>
+						<!--Dark/Light mode button-->
+						<div class="mode-switcher ">
+							<div class="switch-inner go-light " title="Switch To Light Mode "><i class="bi bi-sun icon "></i></div>
+							<div class="switch-inner go-dark" title="Switch To Dark Mode "><i class="bi bi-moon icon "></i></div>
+						</div>
+						<!--mini shoping cart-->
+					</div>
+				</nav>
+			</div>
+			<!--End navbar-->
+		</header>
+		<!--End Page Header-->
+		<!-- Start  Page hero-->
+		<section class="page-hero  d-flex align-items-center" id="page-hero">
+			<div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/pattern-bg-1.jpg" data-bg-opacity=".2"></div>
+			<div class="particles-js  dots" id="particles-js"></div>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg-6 ">
+						<!--Start of .hero-text-area-->
+						<div class="hero-text-area   ">
+							<div class="row">
+								<div class="col-12       ">
+									<div class="hero-title ">Welcome to your AI <span class="featured-text">Shopper Assistant<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path></svg>  </span><span class="design-element rounded-shape stripes"></span></div>
+								</div>
+								<div class="col-10       ">
+									
+								</div>
+				<div class="col-12   ">
+					<div class="hero-social-icons mt-3 mb-3 ">
+						<div class="sc-wrapper dir-row sc-flat">
+							<h4 class="mb-3">Tell your friends</h4>
+						<ul class="sc-list">
+							<li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+							<li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+							<li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+							<li class="sc-item " title="twitter"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-twitter sc-icon"></i></a></li>
+						</ul>
+						</div>
+					</div>
+					</div>
+								<div class="col-12   ">
+									<div class="cta-links-area "><a class=" btn-outline cta-link cta-link-primary " href="#0">start now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--start of image-area -->
+					<div class="col-12 mx-md-auto col-lg-6 text-center " data-tilt>  
+						<div class="hero-image-area mb-5 mb-lg-0">
+							<div class="hero-img-wraper"><img class="img-fluid " src="assets/images/hero/tempModel.png" alt="" draggable="false"></div>
+						</div>
+						<div class="col-10 mt-3 ">
+							<h4 class="clr-main">
+								Ask me anything about Shopping Experiences
+							</h4>
+						</div>
+	
+					<div class="askContainer">
+							<div class="askflex-container">
+								<input
+									type="text"
+									id="question"
+									placeholder="Enter your question..."
+								/>
+								<button
+									id="ask"
+								>
+									Ask
+								</button>
+							</div>
+							<div id="loading-image"></div>
+							<div id="response"></div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End of .hero-text-area-->
+		<!-- End  Page hero-->
+		<!-- Start  services Section-->
+		<section class="services services-boxed mega-section  " id="services">
+			<div class="container">
+				<div class="sec-heading ">
+					<div class="content-area"><!-- <span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">services</span> -->
+						<h2 class="title wow fadeInUp" data-wow-delay=".2s">services we offer</h2>
+					</div>
+				</div>
+				<div class="row gx-4 gy-4 services-row ">  
+					<div class="col-12 col-md-6  col-lg-4 mx-auto ">
+						<!--Start First service box-->
+						<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
+							<div class="service-icon"><i class="flaticon-web-development font-icon"></i></div><span class="service-num hollow-text">1    </span>
+							<div class="service-content">
+								<h3 class="service-title">Personalized Recommendations</h3>
+								<p class="service-text">
+									Discover products that match your preferences and past buying behavior.
+								</p>
+							</div>
+						</div>
+						<!-- End First service box   -->
+					</div>
+					<div class="col-12 col-md-6  col-lg-4 mx-auto ">
+						<!--Start Second service box-->
+						<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".2s">
+							<div class="service-icon"><i class="flaticon-nanotechnology font-icon"></i></div><span class="service-num hollow-text">2    </span>
+							<div class="service-content">
+								<h3 class="service-title">Virtual Shopping Assistants</h3>
+								<p class="service-text">
+									Get instant assistance and product recommendations through our AI-powered chatbots.
+								</p>
+							</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+						</div>
+						<!-- End Second service box-->
+					</div>
+					<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+						<!--Start Third service box-->
+						<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
+							<div class="service-icon"><i class="flaticon-web-domain font-icon"></i></div><span class="service-num hollow-text">3    </span>
+							<div class="service-content">
+								<h3 class="service-title">Price Comparison</h3>
+								<p class="service-text">
+									Compare prices across multiple retailers to ensure you're getting the best deal.								</p>
+							</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+						</div>
+						<!-- End Third service box-->
+					</div>
+					<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+						<!--Start fourth service box-->
+						<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".4s">
+							<div class="service-icon"><i class="flaticon-profile font-icon"></i></div><span class="service-num hollow-text">4    </span>
+							<div class="service-content">
+								<h3 class="service-title">Voice Shopping</h3>
+								<p class="service-text">
+									Shop using voice commands for a hands-free experience.
+								</p>
+							</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+						</div>
+						<!-- End fourth service box   -->
+					</div>
+					<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+						<!--Start 5th service box-->
+						<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".5s">
+							<div class="service-icon"><i class="flaticon-search font-icon"></i></div><span class="service-num hollow-text">5    </span>
+							<div class="service-content">
+								<h3 class="service-title">Sentiment Analysis</h3>
+								<p class="service-text">
+									Make informed decisions based on AI-generated product reviews and ratings.
+								</p>
+							</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+						</div>
+						<!-- End 5th service box-->
+					</div>
+					<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+						<!--Start 6th service box-->
+						<div class="box service-box  wow fadeInUp  reveal-start" data-wow-offset="0" data-wow-delay=".6s">
+							<div class="service-icon"><i class="flaticon-strategy font-icon"></i></div><span class="service-num hollow-text">6    </span>
+							<div class="service-content">
+								<h3 class="service-title">24/7 Support</h3>
+								<p class="service-text">
+									Enjoy 24/7 support with our AI chatbots to answer your questions and resolve issues.
+								</p>
+							</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+						</div>
+						<!-- End 6th service box-->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End  services Section-->
+		<!-- Start  about Section-->
+		<section class="about mega-section" id="about">
+			<div class="container">
+				<!-- Start first about div-->
+				<div class="content-block  ">
+					<div class="row">
+						<div class="col-12 col-lg-6 d-flex align-items-center order-1 order-lg-0 about-col pad-end  wow fadeInUp " data-wow-delay="0.6s">
+							<div class="text-area ">
+								<div class="sec-heading  light-title ">
+									<div class="content-area">
+										<span class=" pre-title wow fadeInUp " data-wow-delay=".2s">about Us</span>
+									</div>
+								</div>
+								<p class="about-text">
+									Our mission is to make shopping fun, effortless, and more rewarding. 
+									With Shopper AI, you're not just shopping; you're embarking on a personalized retail journey tailored to your tastes and needs.
+								</p>
+								<div class="info-items-list ">
+									<div class="row ">
+										<div class="col-9 col-xl-6">
+											<div class="info-item"><i class="flaticon-medal  info-icon"></i>
+												<div class="info-content">
+													<h5 class="info-title">Comprehensive Shopping Assistance</h5>
+													<p class="info-text">
+														Our AI Shopper offers a wide array of services, from personalized recommendations and visual search to virtual shopping assistants and price comparison. 
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-9 col-xl-6">
+											<div class="info-item"><i class="flaticon-game-console info-icon"></i>
+												<div class="info-content">
+													<h5 class="info-title">Transparency</h5>
+													<p class="info-text">
+														We believe in clear, honest communication. Our recommendations and insights are straightforward, helping you to shop better and ultimately save money.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-9 col-xl-6">
+											<div class="info-item"><i class="flaticon-map info-icon"></i>
+												<div class="info-content">
+													<h5 class="info-title">Continuous Innovation</h5>
+													<p class="info-text">
+														We're committed to staying at the forefront of e-commerce technology. Our team continually refines and expands our AI-driven features to meet the evolving demands of modern shoppers and retailers alike.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-9 col-xl-6">
+											<div class="info-item"><i class="flaticon-technical-support-1  info-icon"></i>
+												<div class="info-content">
+													<h5 class="info-title">Data Security and Privacy Focus</h5>
+													<p class="info-text">
+														Your data privacy and security are our top priorities. 
+														We employ robust AI-driven fraud detection systems to protect your information.
+														 Rest assured that your data is encrypted and handled with the utmost care, 
+														 and we never share it with third parties without your consent.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cta-area"><a class=" btn-solid reveal-start" href="#0">Demo Video</a>
+									<!-- <div class="signature ">
+										<div class="signature-img"></div>
+										<div class="signature-name">CEO &amp; Founder </div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 d-flex align-items-center order-0 order-lg-1 about-col  wow fadeInUp" data-wow-delay="0.2s">
+							<div class="img-area  " data-tilt>
+								<div class="image"><img class="about-img img-fluid " loading="lazy" src="assets/images/about/3.png" alt="Our vision"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End first about div-->
+				<!-- Start first about div-->
+				<div class="content-block" id="why">
+					<div class="row">
+						<div class="col-12 col-lg-6 d-flex align-items-center about-col  wow fadeInUp" data-wow-delay="0.2s">
+							<div class="img-area  ">
+								<div class="image  " data-tilt><img class="about-img img-fluid " loading="lazy" src="assets/images/about/1.png" alt="about"></div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 d-flex align-items-center about-col pad-start  wow fadeInUp " data-wow-delay="0.6s">
+							<div class="text-area ">
+								<div class="sec-heading  light-title ">
+									<div class="content-area">
+										<h2 class=" title    wow fadeInUp" data-wow-delay=".4s">
+											Use Our <span class='featured-text'>AI Expert</span> to Help Your Shopping 
+												</span>
+											</h2>
+									</div>
+								</div>
+								<div class="info-items-list">
+									<div class="row ">
+										<div class="col-12 ">
+											<div class="info-item"><span class="info-number ">01.</span>
+												<div class="info-content">
+													<h5 class="info-title">Advanced AI Technology</h5>
+													<p class="info-text">
+														We leverage the latest AI and machine learning innovations to deliver the best shopping experience.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 ">
+											<div class="info-item"><span class="info-number ">02.</span>
+												<div class="info-content">
+													<h5 class="info-title">Personalization</h5>
+													<p class="info-text">
+														Our AI understands your unique preferences, ensuring you find products you'll love.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 ">
+											<div class="info-item"><span class="info-number ">03.</span>
+												<div class="info-content">
+													<h5 class="info-title">Savings</h5>
+													<p class="info-text">
+														Discover the best deals, compare prices, and access exclusive discounts with our platform.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 ">
+											<div class="info-item"><span class="info-number ">04.</span>
+												<div class="info-content">
+												<h5 class="info-title">Convenience</h5>
+												<p class="info-text">
+													Enjoy a hassle-free shopping experience with AI-powered assistance available 24/7.
+												</p>
+												</div>
+											</div>
+											</div>
+									</div>
+								</div>
+								<div class="cta-area "><a class=" btn-solid " href="#0">Join Us</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End first about div-->
+			</div>
+		</section>
+		<!-- End  about Section-->
+
+		<!-- Start  pricing Section-->
+		<section class="pricing mega-section  " id="pricing">
+			<div class="container">
+				<div class="sec-heading  ">
+					<div class="content-area">
+						<h2 class=" title    wow fadeInUp" data-wow-delay=".2s"><span class='hollow-text'>affordable</span> pricing plans</h2>
+					</div>
+				</div>
+				<div class="row">
+					<!--First Plan-->
+					<div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
+						<div class="plan    wow fadeInUp  " data-wow-delay=".1s ">
+							<div class="plan-head"><i class="flaticon-nft-1 plan-icon"></i>
+								<h4 class="plane-name">Open Plan</h4>
+								<div class="plan-price">
+									<h3 class="price">Always Free</h3>
+								</div>
+							</div>
+
+							<div class="plan-details">
+								<ul class="plan-list">
+									<li class="plan-feat "> <span class="feat-text">Ask Me Anything About Shopping</span></li>
+									<li class="plan-feat "> <span class="feat-text">Note: Restrictions Apply From Time To Time.</span></li>
+								</ul>
+							</div>
+							<div class="plan-cta"><a class="cta-btn btn-outline " href="#0">Find Out More</a></div>
+						</div>
+					</div>
+					<!--Second-plan-->
+					<div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
+						<div class="plan    wow fadeInUp  " data-wow-delay=".3s ">
+							<div class="plan-head"><i class="flaticon-virtual-reality plan-icon"></i>
+								<h4 class="plane-name">Tailored Plan</h4>
+								<div class="plan-price">
+									<h3 class="price">25<sup class="currency-symbol">$</sup></h3><span class="per">Monthly</span>
+								</div>
+							</div>
+
+							<div class="plan-details">
+								<ul class="plan-list">
+									<li class="plan-feat "> <span class="feat-text">Tailor Your AI Helper To Your Preferences.</span></li>
+									<li class="plan-feat "> <span class="feat-text">Note: Charities/Other Worthy Organisations Can Access At A Lower Price.</span></li>
+								</ul>
+							</div>
+							<div class="plan-cta"><a class="cta-btn btn-outline " href="#0">Find Out More </a></div>
+						</div>
+					</div>
+					<!--Third-plan-->
+					<div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
+						<div class="plan   featured  wow fadeInUp  " data-wow-delay=".5s ">
+							<div class="plan-head"><i class="flaticon-box plan-icon"></i>
+								<h4 class="plane-name">Customized Plan</h4>
+								<div class="plan-price">
+									<h3 class="price">Get Quote</h3>
+								</div>
+							</div>
+
+							<div class="plan-details">
+								<ul class="plan-list">
+									<li class="plan-feat "> <span class="feat-text">Tell Us What You Need & We Will Customise.</span></li>
+									<li class="plan-feat "> <span class="feat-text">A solution suited for you.</span></li>
+								</ul>
+							</div>
+							<div class="plan-cta"><a class="cta-btn btn-outline " href="#0">Find Out More</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End  pricing Section-->
+		<!-- Start  testimonials Section
+		<section class="testimonials testimonials-1-col   has-dark-bg  mega-section " id="testimonials">
+			<div class="overlay-photo-image-bg parallax " data-bg-img="assets/images/sections-bg-images/1.jpg" data-bg-opacity=".25"> </div>
+			<div class="container">
+				<div class="sec-heading  centered ">
+					<div class="content-area"><span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">testimonials</span>
+						<h2 class=" title    wow fadeInUp" data-wow-delay=".4s">customers <span class='hollow-text'>testimonials</span></h2>
+					</div>
+				</div>
+				<div class="row d-flex align-items-center">
+					<div class="col-12 col-md-10  mx-auto">
+						<div class="swiper-container  wow fadeInUp  " data-wow-delay="0.2s">
+							<div class="swiper-wrapper">-->
+								<!--First Slide
+								<div class="swiper-slide">
+									<div class="testmonial-card d-flex align-items-center justify-content-center">
+										<div class="testimonial-content">
+											<div class="customer-img "><img class="img-fluid " loading="lazy" src="assets/images/testimonials/customer1.png" alt="First Slide "></div>
+											<div class="customer-testimonial">
+												<div class="content">
+													<p class="testimonial-text ">
+														Responding to leads while you are sleeping. I love it how SmartLet responds to leads while you are sleeping.
+													</p>
+												</div>
+											</div>
+											<div class="customer-info ">
+												<div class="customer-details">
+													<p class="customer-name">Dainel Kristan</p>
+													<p class="customer-role">Property Manager</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>-->
+								<!--Second Slide
+								<div class="swiper-slide">
+									<div class="testmonial-card d-flex align-items-center justify-content-center">
+										<div class="testimonial-content">
+											<div class="customer-img "><img class="img-fluid " loading="lazy" src="assets/images/testimonials/customer2.png" alt="First Slide "></div>
+											<div class="customer-testimonial">
+												<div class="content">
+													<p class="testimonial-text ">
+														My inbox have been freed up significantly.
+													</p>
+												</div>
+											</div>
+											<div class="customer-info ">
+												<div class="customer-details">
+													<p class="customer-name">Kathy Henry</p>
+													<p class="customer-role">Leasing Agent</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>-->
+								<!--third Slide
+								<div class="swiper-slide">
+									<div class="testmonial-card d-flex align-items-center justify-content-center">
+										<div class="testimonial-content">
+											<div class="customer-img "><img class="img-fluid " loading="lazy" src="assets/images/testimonials/customer3.png" alt="First Slide "></div>
+											<div class="customer-testimonial">
+												<div class="content">
+													<p class="testimonial-text ">
+														SmartLet has definitely been helpful with scheduling.
+													</p>
+												</div>
+											</div>
+											<div class="customer-info ">
+												<div class="customer-details">
+													<p class="customer-name">Marshal Hofman</p>
+													<p class="customer-role">Real Estate Broker</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>-->
+							<!--navigation buttons
+							<div class="swiper-button-prev">
+								<div class="left-arrow"><i class="bi bi-chevron-left icon "></i>
+								</div>
+							</div>
+							<div class="swiper-button-next">
+								<div class="right-arrow"><i class="bi bi-chevron-right icon "></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>-->
+		<!-- End  testimonials Section-->
+		<!-- Start  faq Section-->
+		<section class="faq mega-section   " id="faq">
+			<div class="shape-top-left"></div>
+			<div class="shape-bottom-right"></div>
+			<div class="pattern-top-end-dir"></div>
+			<div class="pattern-bottom-start-dir"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-5 align-self-center">
+						<div class="faq-img start-dir-img-frame wow fadeIn" data-wow-delay="0.2s"><img class="img-fluid " loading="lazy" src="assets/images/faq/faq-illustration.png" alt=""></div>
+					</div>
+					<div class="col-12 col-lg-7 ">
+						<div class="sec-heading  ">
+							<div class="content-area">
+								<h2 class=" title    wow fadeInUp" data-wow-delay=".2s"><span class='hollow-text'>frequently </span> asked questions </h2>
+							</div>
+						</div>
+						<!--Start Accordion List For FAQ-->
+						<div class="faq-accordion " id="accordion">
+							<div class="card mb-2">
+								<div class="card-header " id="heading-1">
+									<h5 class="mb-0 faq-title">
+										<button class="btn btn-link  faq-btn  collapsed" data-bs-toggle="collapse" 
+											data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">How does the AI Shopper work?</button>
+									</h5>
+								</div>
+								<div class="collapse " id="collapse-1" aria-labelledby="collapse-1" data-bs-parent="#accordion">
+									<div class="card-body">
+										<p class="faq-answer">
+											Our AI Shopper uses advanced algorithms to analyze your browsing and purchase history, preferences, and behavior to provide personalized recommendations and assistance.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="card mb-2">
+								<div class="card-header " id="heading-2">
+									<h5 class="mb-0 faq-title">
+										<button class="btn btn-link  faq-btn  collapsed " 
+											data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">Is my personal information safe with AI Shopper?</button>
+									</h5>
+								</div>
+								<div class="collapse " id="collapse-2" aria-labelledby="collapse-2" data-bs-parent="#accordion">
+									<div class="card-body">
+										<p class="faq-answer">
+											Yes, we take data privacy seriously. Your information is encrypted and securely stored. 
+											We only use it to improve your shopping experience and never share it with third parties without your consent.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="card mb-2">
+								<div class="card-header " id="heading-3">
+									<h5 class="mb-0 faq-title">
+										<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse" 
+											data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+											Is there a cost associated with using AI Shopper?
+										</button>
+									</h5>
+								</div>
+								<div class="collapse " id="collapse-3" aria-labelledby="collapse-3" data-bs-parent="#accordion">
+									<div class="card-body">
+										<p class="faq-answer">
+											Signing up and using many of our basic features is absolutely free. 
+											However, we may offer premium subscription plans with additional benefits for those who desire an even more tailored shopping experience.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="card mb-2">
+								<div class="card-header " id="heading-4">
+									<h5 class="mb-0 faq-title">
+										<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse" 
+											data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">Can I use AI Shopper with my favorite e-commerce platforms and brands?</button>
+									</h5>
+								</div>
+								<div class="collapse " id="collapse-4" aria-labelledby="collapse-4" data-bs-parent="#accordion">
+									<div class="card-body">
+										<p class="faq-answer">
+											Yes, we will collaborate with a diverse range of e-commerce platforms and retailers, ensuring that you can access and shop from a wide variety of brands and products.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="card mb-2">
+								<div class="card-header " id="heading-5">
+									<h5 class="mb-0 faq-title">
+										<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse" 
+											data-bs-target="#collapse-5" aria-expanded="true" aria-controls="collapse-4">How accurate are the product recommendations from AI Shopper?</button>
+									</h5>
+								</div>
+								<div class="collapse " id="collapse-5" aria-labelledby="collapse-4" data-bs-parent="#accordion">
+									<div class="card-body">
+										<p class="faq-answer">
+											Our AI recommendations are continually improving as we refine our algorithms and learn from your interactions. The more you use our platform, the more accurate and personalized the recommendations become.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End  faq Section-->
+
+		<!-- Start Form Section-->
+		<section class="contact-us  mega-section  pb-0" id="contact-us">
+			<div class="container">
+				<section class="contact-us-form-section  mega-section  ">
+					<div class="row">
+						<div class="col-12 ">
+							<div class="contact-form-panel">
+								<div class="sec-heading centered    ">
+									<div class="content-area">
+										<h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Have any questions? Let's answer them</h2>
+									</div>
+								</div>
+								<div class="contact-form-inputs wow fadeInUp" data-wow-delay=".6s">
+									<div class="custom-form-area input-boxed"> 
+										<!--Form To have user messages-->
+										<form class="main-form" id="contact-us-form" action="php/send-mail.php" method="post"><span class="done-msg"></span>
+											<div class="row ">
+												<div class="col-12 col-lg-6">
+													<div class="   input-wrapper">
+														<input class="text-input" id="user-name" name="UserName" type="text"/>
+														<label class="input-label" for="user-name"> Name <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+													</div>
+												</div>
+												<div class="col-12 col-lg-6">
+													<div class="   input-wrapper">
+														<input class="text-input" id="user-email" name="UserEmail" type="email"/>
+														<label class="input-label" for="user-email"> E-mail <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+													</div>
+												</div>
+												<div class="col-12 ">
+													<div class="   input-wrapper">
+														<input class="text-input" id="msg-subject" name="subject" type="text"/>
+														<label class="input-label" for="msg-subject"> Subject <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+													</div>
+												</div>
+												<div class="col-12 ">
+													<div class="   input-wrapper">
+														<textarea class=" text-input" id="msg-text" name="message"></textarea>
+														<label class="input-label" for="msg-text"> your message <span class="req">*</span></label><span class="b-border"></span><i></i><span class="error-msg"></span>
+													</div>
+												</div>
+												<div class="col-12 submit-wrapper">
+													<button class=" btn-solid" id="submit-btn" type="submit" name="UserSubmit">Send your message</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="locations-section  mega-section d-flex justify-content-center">
+					<div class=" contact-info-panel justify-content-center">
+						<div class="info-section ">
+							<div class="row">
+								<div class="col-12 text-center just">     
+									<div class="info-panel wow fadeInUp" data-wow-delay=".4s ">
+										<h4 class="location-title">Talk to our friendly customer services team</h4>
+										<div class="line-on-side"> </div>
+										<div class="location-card  "><i class="flaticon-email icon"></i>
+											<div class="card-content">
+												<h6 class="content-title">email:</h6><a class="email link" href="mailto:yourname@example.com">info@example.com</a>
+											</div>
+										</div>
+										<div class="location-card  "><i class="flaticon-phone-call icon"></i>
+											<div class="card-content">
+												<h6 class="content-title">phone:</h6><a class="tel link" href="tel:0123456789">+29876543210</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<!-- End  blog Section-->
+		<!-- Start  page-footer Section-->
+		<footer class="page-footer dark-color-footer" id="page-footer">
+			<div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/footer-bg-1.jpg" data-bg-opacity=".25"></div>
+			<div class="container">
+				<div class="row footer-cols">
+					<div class="col-12 col-md-8 col-lg-4  footer-col ">
+						<img class="img-fluid footer-logo" loading="lazy" src="assets/images/logo/whitelogo.png" alt="logo"/>
+						<div class="footer-col-content-wrapper">        
+							<p class="footer-text-about-us">
+								Partnering with AI Shopper means investing in the future of your shopping experiences – Join us in shaping this exciting evolution and reap the rewards of pioneering excellence in shopping engagement.
+							</p>
+						</div>
+					</div>
+					<div class="col-6 col-lg-2  footer-col mt-5">
+						<div class="footer-col-content-wrapper">
+							<ul class="footer-menu ">
+								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#page-hero">Home</a>
+								</li>
+								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#about">About Us</a>
+								</li>
+								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#services">Services</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 col-lg-2 footer-col mt-5">
+						<div class="footer-col-content-wrapper">
+							<ul class="footer-menu">
+								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#pricing">Pricing</a>
+								</li>
+								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#faq">Faqs</a>
+								</li>
+								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#why">Why</a>
+								</li>
+								<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link" href="#page-hero">Start asking</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 footer-col ">
+						<h2 class=" footer-col-title">contact information</h2>
+						<div class="footer-col-content-wrapper">
+							<div class="contact-info-card"><i class="bi bi-envelope icon"></i><a class="text-lowercase  info" href="mailto:example@support.com">example@support.com</a></div>
+							<div class="contact-info-card"><i class="bi bi-geo-alt icon"></i><span class="info">AI2BC Organization</span></div>
+							<div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info" href="tel:+20123456789">+20123456789  </a></div>
+							<div class="contact-info-card">
+								<div class="social-icons">
+									<div class="sc-wrapper dir-row sc-size-32">
+										<ul class="sc-list">
+											<li class="sc-item " title="Facebook"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+											<li class="sc-item " title="youtube"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-youtube sc-icon"></i></a></li>
+											<li class="sc-item " title="instagram"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-instagram sc-icon"></i></a></li>
+											<li class="sc-item " title="twitter"><a class="sc-link" href="#0" title="social media icon"><i class="fab fa-twitter sc-icon"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyrights ">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-6 d-flex justify-content-start">
+							<p class="credits">
+								&copy; 2023
+								All rights reserved to
+													 <a class="link" href="#0">AI2BC - AI Shopper </a>
+							</p>
+						</div>
+						<div class="col-12 col-md-6 d-flex justify-content-end">
+							<div class="terms-links"><a href="#0">Terms of Use </a>
+								| <a href="#0">Privacy Policy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End  page-footer Section-->
+		<!-- Start loading-screen Component-->
+		<div class="loading-screen" id="loading-screen"><span class="bar top-bar"></span><span class="bar down-bar"></span><span class="progress-line"></span><span class="loading-counter"> </span></div>
+		<!-- End loading-screen Component-->
+		<!-- Start back-to-top Component-->
+		<div class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up icon "></i>
+		</div>
+		<!-- End back-to-top Component-->   
+				<!--     JQuery     -->
+				<script src="js/vendors/jquery-3.6.1.min.js"></script>
+				<!--     appear     -->
+				<script src="js/vendors/appear.min.js"></script>
+				<!--     bootstrap     -->
+				<script src="js/vendors/bootstrap.bundle.min.js"></script>
+				<!--     countTo     -->
+				<script src="js/vendors/jquery.countTo.js"></script>
+				<!--     wow     -->
+				<script src="js/vendors/wow.min.js"></script>
+				<!--     swiper     -->
+				<script src="js/vendors/swiper-bundle.min.js"></script>
+				<!--     particles     -->
+				<script src="js/vendors/particles.min.js"></script>
+				<!--     Vanilla-tilt     -->
+				<script src="js/vendors/vanilla-tilt.min.js"></script>
+				<!--     isotope     -->
+				<script src="js/vendors/isotope-min.js"></script>
+				<!--     fancybox     -->
+				<script src="js/vendors/jquery.fancybox.min.js"></script>
+				<!--     main     -->
+				<script src="js/main.js"></script>
+				<!-- Chatbot -->
+				<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+				<script src="js/askMe.js"></script>
+	</body>
+</html>
