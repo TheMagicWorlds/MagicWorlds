@@ -11,3 +11,6 @@
 [submodule "AI/AIWriter"]
 	path = AI/AIWriter
 	url = https://github.com/MeetYourAI/AIWriter
+[submodule "AI/SpiritualityAI"]
+	path = AI/SpiritualityAI
+	url = https://github.com/MeetYourAI/SpiritualityAI.git
