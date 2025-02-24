@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AIVidCreator</title>
+	<meta name="description"
+		content="Watch as AI works its magic on your videos, enhancing every aspect and creating an
+		unforgettable visual experience.!" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- fav icon -->
+	<link rel="icon" href="assets/images/fav-icon/fav-icon.png">
+
+	<!-- bootstarp -->
+	<link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+
+	<!-- animate.css file -->
+	<link rel="stylesheet" href="css/vendors/animate.css">
+
+	<!-- Swiper -->
+	<link rel="stylesheet" href="css/vendors/swiper-bundle.min.css">
+
+	<!-- flaticon -->
+	<link rel="stylesheet" href="css/vendors/flaticon/flaticon.css">
+
+	<!-- fontAwesome -->
+	<link rel="stylesheet" href="css/vendors/all.min.css">
+
+	<!-- bootstrap icons -->
+	<link rel="stylesheet" href="css/vendors/bootstrap-icons-1.9.1/bootstrap-icons.css">
+
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="css/vendors/jquery.fancybox.min.css">
+
+	<!-- fonts site preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<!-- fonts site preconnect -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- Font Family -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
+
+	<!-- main-LTR -->
+	<link rel="stylesheet" href="css/main-LTR.css">
+
+	<!-- Microsoft CLarity Analytics Tracker -->
+	<script type="text/javascript">
+		(function(c,l,a,r,i,t,y){
+			c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+			t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+		})(window, document, "clarity", "script", "is4f7g8b9b");
+	</script>
+	
+</head>
+
+<body class=" dark-theme  landing-page-demo">
+	<!--Start Page Header-->
+	<header class=" header-basic" id="page-header">
+		<div class="container">
+			<!--Start navbar-->
+			<nav class="menu-navbar" id="main-nav">
+				<div class="header-logo"><a class="logo-link" href="#"><img class="logo-img light-logo" loading="lazy"
+							src="assets/images/logo/logo-white.png" alt="logo" /><img class="logo-img  dark-logo"
+							loading="lazy" src="assets/images/logo/logo-white.png" alt="logo" /></a></div>
+				<div class="links menu-wrapper ">
+					<ul class="list-js links-list">
+						<li class="nav-item menu-item has-sub-menu"><a class="nav-link menu-link   active"
+								href="#page-hero">Create</a></li>
+						<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#services">Features </a>
+						</li>
+						<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#about">About Us </a></li>
+						<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#pricing">Pricing </a></li>
+						<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#testimonials">Testimonials </a></li>
+						<li class="nav-item menu-item"><a class="nav-link menu-link  " href="#faq">FAQ</a></li>
+
+						<li class="nav-item menu-item"><a class="nav-link menu-link  " href="https://meetyourai.github.io/VideoAI/blog">Blog </a></li>
+					</ul>
+				</div>
+				<div class="controls-box">
+					<!--Menu Toggler button-->
+					<div class="control  menu-toggler"><span></span><span></span><span></span></div>
+					<!--Dark/Light mode button-->
+					<div class="mode-switcher ">
+						<div class="switch-inner go-light " title="Switch To Light Mode "><i
+								class="bi bi-sun icon "></i></div>
+						<div class="switch-inner go-dark" title="Switch To Dark Mode "><i class="bi bi-moon icon "></i>
+						</div>
+					</div>
+					<!--mini shoping cart-->
+				</div>
+			</nav>
+		</div>
+		<!--End navbar-->
+	</header>
+	<!--End Page Header-->
+	<!-- Start  Page hero-->
+	<section class="page-hero  d-flex align-items-center" id="page-hero">
+		<div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/pattern-bg-1.jpg"
+			data-bg-opacity=".2"></div>
+		<div class="particles-js  dots" id="particles-js"></div>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-lg-6 ">
+					<!--Start of .hero-text-area-->
+					<div class="hero-text-area   ">
+						<div class="row">
+							<div class="col-12       ">
+								<h1 class="hero-title  ">Where Creativity Meets <span class="featured-text">Intelligence
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150"
+											preserveAspectRatio="none">
+											<path
+												d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7">
+											</path>
+										</svg> </span><span class="design-element rounded-shape stripes"></span></h1>
+							</div>
+							<div class="col-10">
+								<h4 class="clr-main text-primary">
+									Ask me anything
+								</h4>
+							</div>
+									<div class="askContainer">
+										<div class="askflex-container">
+											<input
+												type="text"
+												id="question"
+												placeholder="Enter your question..."
+												class="w-full"
+											/>
+											<button
+												id="ask"
+												class="bg-dark text-light"
+											>
+												Ask
+											</button>
+										</div>
+										<div id="loading-image"></div>
+										<div id="response"></div>
+									</div>
+								
+		
+		
+									
+									<div class="col-12   ">
+										<div class="hero-social-icons mb-3 ">
+											<div class="sc-wrapper dir-row sc-flat">
+												<p class="">Tell your friends</p>
+												<ul class="sc-list">
+													<li class="sc-item " title="Facebook"><a class="sc-link" href="#0"
+															title="social media icon"><i
+																class="fab fa-facebook-f sc-icon"></i></a></li>
+													<li class="sc-item " title="youtube"><a class="sc-link" href="#0"
+															title="social media icon"><i class="fab fa-youtube sc-icon"></i></a>
+													</li>
+													<li class="sc-item " title="instagram"><a class="sc-link" href="#0"
+															title="social media icon"><i
+																class="fab fa-instagram sc-icon"></i></a></li>
+													<li class="sc-item " title="twitter"><a class="sc-link" href="#0"
+															title="social media icon"><i class="fab fa-twitter sc-icon"></i></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				<!--start of image-area -->
+				<div class="col-12 mx-md-auto col-lg-6 text-center " data-tilt>
+					<div class="hero-image-area mb-5 mb-lg-0">
+						<div class="hero-img-wraper"><img class="img-fluid " src="assets/images/hero/tempModel.png"
+								alt="" draggable="false"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End of .hero-text-area-->
+	<!-- End  Page hero-->
+	<!-- Start  services Section-->
+	<section class="services services-boxed mega-section  " id="services">
+		<div class="container">
+			<div class="sec-heading ">
+				<div class="content-area">
+					<!-- <span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">services</span> -->
+					<h2 class="title wow fadeInUp" data-wow-delay=".2s">services we offer</h2>
+					<p class="subtitle wow fadeInUp " data-wow-delay=".4s">
+						Experience the future of video creation with our cutting-edge AI Video platform. Transforming
+						Videos into dynamic masterpieces. Our AI Video technology will bring innovation to every frame.
+					</p>
+				</div>
+				<div class=" cta-area wow fadeInUp" data-wow-delay=".6s"><a class="cta-btn btn-solid    ">see all
+						services <i class="bi bi-arrow-right icon "></i></a></div>
+			</div>
+			<div class="row gx-4 gy-4 services-row ">
+				<div class="col-12 col-md-6  col-lg-4 mx-auto ">
+					<!--Start First service box-->
+					<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".1s">
+						<div class="service-icon"><i class="flaticon-web-development font-icon"></i></div><span
+							class="service-num hollow-text">1 </span>
+						<div class="service-content">
+							<h3 class="service-title">Video Creation Tools</h3>
+							<p class="service-text">
+								AIVidCreator offers a user-friendly platform that allows users to create
+								videos from their photos, video clips, text, and music. Users can choose from various
+								templates and styles to create videos for different purposes.
+							</p>
+						</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+					</div>
+					<!-- End First service box   -->
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 mx-auto ">
+					<!--Start Second service box-->
+					<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".2s">
+						<div class="service-icon"><i class="flaticon-nanotechnology font-icon"></i></div><span
+							class="service-num hollow-text">2 </span>
+						<div class="service-content">
+							<h3 class="service-title">Template Library</h3>
+							<p class="service-text">
+								AIVidCreator provides a library of templates suited for different themes,
+								industries, and occasions. These templates serve as starting points for video creation,
+								making it easy to tailor videos to specific needs.
+							</p>
+						</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+					</div>
+					<!-- End Second service box-->
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+					<!--Start Third service box-->
+					<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".3s">
+						<div class="service-icon"><i class="flaticon-web-domain font-icon"></i></div><span
+							class="service-num hollow-text">3 </span>
+						<div class="service-content">
+							<h3 class="service-title">Text and Captions</h3>
+							<p class="service-text">
+								Users can add text and captions to their videos to provide context, explanations, or
+								titles for different scenes. </p>
+						</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+					</div>
+					<!-- End Third service box-->
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+					<!--Start fourth service box-->
+					<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".4s">
+						<div class="service-icon"><i class="flaticon-profile font-icon"></i></div><span
+							class="service-num hollow-text">4 </span>
+						<div class="service-content">
+							<h3 class="service-title">Customization</h3>
+							<p class="service-text">
+								Users can customize videos by adding their own content, including images, videos, text,
+								and music. AIVidCreator allows for customization of colors, fonts, styles,
+								and other visual elements.
+							</p>
+						</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+					</div>
+					<!-- End fourth service box   -->
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+					<!--Start 5th service box-->
+					<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".5s">
+						<div class="service-icon"><i class="flaticon-search font-icon"></i></div><span
+							class="service-num hollow-text">5 </span>
+						<div class="service-content">
+							<h3 class="service-title">Music Integration:</h3>
+							<p class="service-text">
+								AIVidCreator allows users to add music tracks from their library or choose
+								from a selection of royalty-free tracks to enhance the video's atmosphere. </p>
+						</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+					</div>
+					<!-- End 5th service box-->
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+					<!--Start 6th service box-->
+					<div class="box service-box  wow fadeInUp  reveal-start" data-wow-offset="0" data-wow-delay=".6s">
+						<div class="service-icon"><i class="flaticon-strategy font-icon"></i></div><span
+							class="service-num hollow-text">6 </span>
+						<div class="service-content">
+							<h3 class="service-title">Voiceovers: </h3>
+							<p class="service-text">
+								Users can record and add voiceovers to their videos, providing narration or additional
+								context. </p>
+						</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+					</div>
+					<!-- End 6th service box-->
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+					<!--Start 7th service box-->
+					<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".4s">
+						<div class="service-icon"><i class="flaticon-profile font-icon"></i></div><span
+							class="service-num hollow-text">4 </span>
+						<div class="service-content">
+							<h3 class="service-title">Clip Trimming and Arrangement</h3>
+							<p class="service-text">
+								AIVidCreator enables users to trim video clips, arrange them in a desired
+								sequence, and control the timing of transitions. </p>
+						</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+					</div>
+					<!-- End Seventh service box   -->
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+					<!--Start 8th service box-->
+					<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".5s">
+						<div class="service-icon"><i class="flaticon-search font-icon"></i></div><span
+							class="service-num hollow-text">5 </span>
+						<div class="service-content">
+							<h3 class="service-title">Image Slideshows: </h3>
+							<p class="service-text">
+								Users can create dynamic image slideshows with animations, transitions, and effects.
+						</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+					</div>
+					<!-- End 8th service box-->
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+					<!--Start 9th service box-->
+					<div class="box service-box  wow fadeInUp  reveal-start" data-wow-offset="0" data-wow-delay=".6s">
+						<div class="service-icon"><i class="flaticon-strategy font-icon"></i></div><span
+							class="service-num hollow-text">6 </span>
+						<div class="service-content">
+							<h3 class="service-title">Sharing and Distribution: </h3>
+							<p class="service-text">
+								AIVidCreator offers options to share videos directly to social media
+								platforms, embed videos on websites, and export videos for offline viewing.
+						</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+					</div>
+					<!-- End 9th service box-->
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+					<!--Start 10th service box-->
+					<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".4s">
+						<div class="service-icon"><i class="flaticon-profile font-icon"></i></div><span
+							class="service-num hollow-text">4 </span>
+						<div class="service-content">
+							<h3 class="service-title">Mobile App</h3>
+							<p class="service-text">
+								AIVidCreator's mobile app allows users to create and edit videos on-the-go
+								using their smartphones or tablets.
+						</div><a class="read-more" href="#0">read more<i class="bi bi-arrow-right icon "> </i></a>
+					</div>
+					<!-- End 10th service box   -->
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+					<!--Start 11th service box-->
+					<div class="box service-box  wow fadeInUp reveal-start" data-wow-offset="0" data-wow-delay=".5s">
+						<div class="service-icon"><i class="flaticon-search font-icon"></i></div><span
+							class="service-num hollow-text">5 </span>
+						<div class="service-content">
+							<h3 class="service-title">Professional Plans: </h3>
+							<p class="service-text">
+								AIVidCreator provides different subscription plans with varying features
+								and benefits, including higher video quality, access to premium templates, and more
+								customization options.
+						</div>
+					</div>
+					<!-- End 11th service box-->
+				</div>
+				<div class="col-12 col-md-6  col-lg-4 mx-auto  ">
+					<!--Start 9th service box-->
+					<div class="box service-box  wow fadeInUp  reveal-start" data-wow-offset="0" data-wow-delay=".6s">
+						<div class="service-icon"><i class="flaticon-strategy font-icon"></i></div><span
+							class="service-num hollow-text">6 </span>
+						<div class="service-content">
+							<h3 class="service-title">Business and Marketing Features: </h3>
+							<p class="service-text">
+								AIVidCreator offers features designed for businesses and marketers, such as
+								branding options, logo integration, and tools for creating promotional videos.
+						</div>
+						<!-- End 12th service box-->
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- End  services Section-->
+	<!-- Start  about Section-->
+	<section class="about mega-section" id="about">
+		<div class="container">
+			<!-- Start first about div-->
+			<div class="content-block  ">
+				<div class="row">
+					<div class="col-12 col-lg-6 d-flex align-items-center order-1 order-lg-0 about-col pad-end  wow fadeInUp "
+						data-wow-delay="0.6s">
+						<div class="text-area ">
+							<div class="sec-heading  light-title ">
+								<div class="content-area"><span class=" pre-title wow fadeInUp "
+										data-wow-delay=".2s">about Us</span>
+									<h2 class=" title    wow fadeInUp" data-wow-delay=".4s"><span
+											class='hollow-text'>Crafting</span> Stories, Perfected by <span
+											class='featured-text'> AI. <svg xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 500 150" preserveAspectRatio="none">
+												<path
+													d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7">
+												</path>
+											</svg></span></h2>
+								</div>
+							</div>
+							<p class="about-text">
+
+								Welcome to the future of video creation! At AIVidCreator, we are passionate
+								about revolutionizing the way you craft, share, and experience videos. Our innovative
+								platform is your gateway to an exciting world where creativity merges seamlessly with
+								artificial intelligence.
+
+							</p>
+							<p class="about-text">
+								Unleash Your Imagination with AI
+
+								At AIVidCreator, we believe that every idea deserves to shine. That's why
+								we've harnessed the power of AI to elevate your video content. Our cutting-edge
+								technology enhances your videos with precision, ensuring that every frame captures
+								attention and resonates with your audience.
+
+								Your Vision, Perfected
+
+								Imagine videos that reflect your vision flawlessly. With AIVidCreator, your
+								creativity takes center stage. Our platform offers a diverse array of templates and
+								customization options, allowing you to create videos that align with your style and
+								message.
+							</p>
+							<div class="info-items-list ">
+								<div class="row ">
+									<div class="col-9 col-xl-6">
+										<div class="info-item"><i class="flaticon-medal  info-icon"></i>
+											<div class="info-content">
+												<h5 class="info-title">Collaborate, Create, Innovate </h5>
+												<p class="info-text">We understand that collaboration fuels innovation.
+													With AIVidCreator, teamwork is seamless. Multiple users
+													can collaborate on projects, bringing diverse perspectives and
+													expertise together to create videos that exceed expectations.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-9 col-xl-6">
+										<div class="info-item"><i class="flaticon-game-console info-icon"></i>
+											<div class="info-content">
+												<h5 class="info-title">Captivate and Share Anywhere: </h5>
+												<p class="info-text">Your videos are meant to be seen and shared. [Your
+													Competition's Name] empowers you to captivate your audience wherever
+													they are. Share your videos directly to social media platforms or
+													embed them on your website for maximum engagement.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-9 col-xl-6">
+										<div class="info-item"><i class="flaticon-map info-icon"></i>
+											<div class="info-content">
+												<h5 class="info-title">Elevate Your Creativity: </h5>
+												<p class="info-text">AIVidCreator is more than just a
+													platform; it's a catalyst for your creative journey. Our commitment
+													to pushing boundaries, exploring possibilities, and embracing
+													AI-driven innovation sets us apart in the world of video creation.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-9 col-xl-6">
+										<div class="info-item"><i class="flaticon-technical-support-1  info-icon"></i>
+											<div class="info-content">
+												<h5 class="info-title">AI-Powered Personalization</h5>
+												<p class="info-text">Engaging your audience on a personal level is
+													crucial. That's why we've integrated AI-driven personalization into
+													our platform. From tailored recommendations to content variations,
+													AIVidCreator ensures that your videos connect deeply
+													with viewers.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p class="about-text">
+								Are you ready to redefine video creation? Join us on a journey that fuses your
+								imagination with the limitless power of AI. Discover the excitement of crafting videos
+								that leave a lasting impact.
+
+								Elevate your creativity with AIVidCreator. Explore our platform today and
+								witness the fusion of artistry and technology. Your videos are about to take center
+								stage like never before.
+							</p>
+							<div class="cta-area"><a class=" btn-solid reveal-start" href="#0">Join us</a>
+								<!-- <div class="signature ">
+										<div class="signature-img"></div>
+										<div class="signature-name">CEO &amp; Founder </div>
+									</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 d-flex align-items-center order-0 order-lg-1 about-col  wow fadeInUp"
+						data-wow-delay="0.2s">
+						<div class="img-area  " data-tilt>
+							<div class="image   "><img class="about-img img-fluid " loading="lazy"
+									src="assets/images/about/AIvideo.jpeg" alt="Our vision"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--End first about div-->
+			<!-- Start first about div-->
+			<div class="content-block  ">
+				<div class="row">
+					<div class="col-12 col-lg-6 d-flex align-items-center about-col  wow fadeInUp"
+						data-wow-delay="0.2s">
+						<div class="img-area  ">
+							<div class="image  " data-tilt><img class="about-img img-fluid " loading="lazy"
+									src="assets/images/about/about_us.jpeg" alt="about"></div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 d-flex align-items-center about-col pad-start  wow fadeInUp "
+						data-wow-delay="0.6s">
+						<div class="text-area ">
+							<div class="sec-heading  light-title ">
+								<div class="content-area">
+									<h2 class=" title    wow fadeInUp" data-wow-delay=".4s">
+										Why our <span class='hollow-text'> customers</span> choose <span
+											class='featured-text'>working
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150"
+												preserveAspectRatio="none">
+												<path
+													d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7">
+												</path>
+											</svg>
+										</span> with us
+									</h2>
+								</div>
+							</div>
+							<p class=" about-text">
+								Unlock Endless Possibilities: Our AI Video technology streamlines the process, letting you focus on your creative vision
+							</p>
+							<div class="info-items-list">
+								<div class="row ">
+									<div class="col-12 ">
+										<div class="info-item"><span class="info-number ">01.</span>
+											<div class="info-content">
+												<h5 class="info-title">Ease of Use: </h5>
+												<p class="info-text">
+													AIVidCreator's intuitive drag-and-drop interface makes
+													it accessible for users of all skill levels to create videos without
+													extensive technical knowledge. </p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 ">
+										<div class="info-item"><span class="info-number ">02.</span>
+											<div class="info-content">
+												<h5 class="info-title">Quick Video Creation</h5>
+												<p class="info-text">
+													The platform's pre-designed templates enable users to produce videos
+													efficiently, which is especially useful for time-sensitive projects.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 ">
+										<div class="info-item"><span class="info-number ">03.</span>
+											<div class="info-content">
+												<h5 class="info-title">Template Variety</h5>
+												<p class="info-text">AIVidCreator offers a wide array of
+													templates suited for different purposes, making it easy to find a
+													style that fits your content.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 ">
+										<div class="info-item"><span class="info-number ">04.</span>
+											<div class="info-content">
+												<h5 class="info-title">Integration with Media</h5>
+												<p class="info-text">Users can seamlessly incorporate photos, videos,
+													text, and music to craft engaging multimedia presentations.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 ">
+										<div class="info-item"><span class="info-number ">05.</span>
+											<div class="info-content">
+												<h5 class="info-title">Customization</h5>
+												<p class="info-text">While templates provide a starting point, [Your
+													Competition's Name] allows users to customize colors, fonts, and
+													styles to align with their brand or personal preferences.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 ">
+										<div class="info-item"><span class="info-number ">06.</span>
+											<div class="info-content">
+												<h5 class="info-title">Mobile App</h5>
+												<p class="info-text">With a mobile app, users can create videos
+													on-the-go using their smartphones or tablets.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 ">
+										<div class="info-item"><span class="info-number ">07.</span>
+											<div class="info-content">
+												<h5 class="info-title">Efficient Sharing</h5>
+												<p class="info-text">AIVidCreator facilitates direct
+													sharing of videos on social media platforms and embedding them on
+													websites, enhancing distribution and engagement.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cta-area "><a class=" btn-solid " href="#0">get in touch</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--End first about div-->
+		</div>
+	</section>
+	<!-- End  about Section-->
+	<!-- Start  stats Section-->
+	<section class="stats js-stats-counter mega-section">
+		<div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/pattern-bg-3.jpg"
+			data-bg-opacity=".2"></div>
+		<div class="container">
+			<div class="stats-inner">
+				<div class="row ">
+					<!--Info One-->
+					<div class="col-12 col-md-6 col-lg-3 stat-box ">
+						<div class="stat-box-inner  " data-tilt="data-tilt"><i
+								class="flaticon-project-management stat-icon"></i>
+							<p class="stat-num "><span class="counter" data-from="10" data-to="2" data-speed="3000"
+									data-refresh-interval="50"></span><span class="sign">+</span></p><span
+								class="stat-desc">Testimonial</span>
+						</div>
+					</div>
+					<!--Info Two-->
+					<div class="col-12 col-md-6 col-lg-3 stat-box ">
+						<div class="stat-box-inner  " data-tilt="data-tilt"><i
+								class="flaticon-content-management stat-icon"></i>
+							<p class="stat-num "><span class="counter" data-from="0" data-to="20" data-speed="3000"
+									data-refresh-interval="50"></span><span class="sign">+</span></p><span
+								class="stat-desc">Visitors</span>
+						</div>
+					</div>
+					<!--Info Three-->
+					<div class="col-12 col-md-6 col-lg-3 stat-box ">
+						<div class="stat-box-inner  " data-tilt="data-tilt"><i class="flaticon-user stat-icon"></i>
+							<p class="stat-num "><span class="counter" data-from="0" data-to="2" data-speed="3000"
+									data-refresh-interval="50"></span><span class="sign">+</span></p><span
+								class="stat-desc">AI Tools</span>
+						</div>
+					</div>
+					<!--Info Four-->
+					<div class="col-12 col-md-6 col-lg-3 stat-box ">
+						<div class="stat-box-inner  " data-tilt="data-tilt"><i class="flaticon-aim stat-icon"></i>
+							<p class="stat-num "><span class="counter" data-from="0" data-to="1" data-speed="3000"
+									data-refresh-interval="50"></span><span class="sign">+</span></p><span
+								class="stat-desc">years Of exprience</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End  stats Section-->
+
+	<!-- Start  pricing Section-->
+	<section class="pricing mega-section  " id="pricing">
+		<div class="container">
+			<div class="sec-heading  ">
+				<div class="content-area">
+					<h2 class=" title    wow fadeInUp" data-wow-delay=".2s"><span class='hollow-text'>affordable</span>
+						pricing plans</h2>
+					<p class="subtitle   wow fadeInUp " data-wow-delay=".4s">The best deals in the market:</p>
+				</div>
+				<div class=" cta-area   wow fadeInUp" data-wow-delay=".6s"><a class="cta-btn btn-solid    "
+						href="#0">see all plans<i class="bi bi-arrow-right icon "></i></a></div>
+			</div>
+			<div class="row">
+				<!--First Plan-->
+				<div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
+					<div class="plan    wow fadeInUp  " data-wow-delay=".1s ">
+						<div class="plan-head"><i class="flaticon-nft-1 plan-icon"></i>
+							<h4 class="plane-name">Open Plan</h4>
+						</div>
+
+						<div class="plan-details">
+							<ul class="plan-list">
+								<li class="plan-feat "> <span class="feat-text">Alwayes Free</span></li>
+								<li class="plan-feat "> <span class="feat-text">Some tools may have restriction</span>
+								</li>
+							</ul>
+						</div>
+						<div class="plan-cta"><a class="cta-btn btn-outline " href="#0">select plan </a></div>
+					</div>
+				</div>
+				<!--Second-plan-->
+				<div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
+					<div class="plan    wow fadeInUp  " data-wow-delay=".3s ">
+						<div class="plan-head"><i class="flaticon-virtual-reality plan-icon"></i>
+							<h4 class="plane-name">Tailored Plan</h4>
+							<div class="plan-price">
+								<h3 class="price">25<sup class="currency-symbol">$</sup></h3><span
+									class="per">Monthly</span>
+							</div>
+						</div>
+
+						<div class="plan-details">
+							<ul class="plan-list">
+								<li class="plan-feat "> <span class="feat-text">Group Discount Available
+									</span></li>
+								<li class="plan-feat "> <span class="feat-text">Charity, School like Orgs can access at
+										lower cost</span></li>
+								<li class="plan-feat "> <span class="feat-text">Conditions Apply</span></li>
+							</ul>
+						</div>
+						<div class="plan-cta"><a class="cta-btn btn-outline " href="#0">select plan </a></div>
+					</div>
+				</div>
+				<!--Third-plan-->
+				<div class="col-12  col-md-6 col-xl-3  mx-auto price-plan ">
+					<div class="plan   featured  wow fadeInUp  " data-wow-delay=".5s ">
+						<div class="plan-head"><i class="flaticon-box plan-icon"></i>
+							<h4 class="plane-name">Customized Plan</h4>
+						</div>
+
+						<div class="plan-details">
+							<ul class="plan-list">
+								<li class="plan-feat "> <span class="feat-text"> Please get in touch
+								</li>
+							</ul>
+						</div>
+
+						<div class="plan-cta"><a class="cta-btn btn-outline " href="#0">select plan </a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End  pricing Section-->
+	<!-- Start  testimonials Section-->
+	<section class="testimonials testimonials-1-col   has-dark-bg  mega-section " id="testimonials">
+		<div class="overlay-photo-image-bg parallax " data-bg-img="assets/images/sections-bg-images/1.jpg"
+			data-bg-opacity=".25"> </div>
+		<div class="container">
+			<div class="sec-heading  centered ">
+				<div class="content-area"><span class=" pre-title       wow fadeInUp "
+						data-wow-delay=".2s">testimonials</span>
+					<h2 class=" title    wow fadeInUp" data-wow-delay=".4s">customers <span
+							class='hollow-text'>testimonials</span></h2>
+				</div>
+			</div>
+			<div class="row d-flex align-items-center">
+				<div class="col-12 col-md-10  mx-auto">
+					<div class="swiper-container  wow fadeInUp  " data-wow-delay="0.2s">
+						<div class="swiper-wrapper">
+							<!--First Slide-->
+							<div class="swiper-slide">
+								<div class="testmonial-card d-flex align-items-center justify-content-center">
+									<div class="testimonial-content">
+										<div class="customer-img "><img class="img-fluid " loading="lazy"
+												src="assets/images/testimonials/customer1.jpeg" alt="First Slide "></div>
+										<div class="customer-testimonial">
+											<div class="content">
+												<p class="testimonial-text ">
+													Creating videos will be seamless as it’s really a user friendly platform. 
+													I love the experience. I love the creativity.
+												</p>
+											</div>
+										</div>
+										<div class="customer-info ">
+											<div class="customer-details">
+												<p class="customer-name">Oke Elizabeth</p>
+												<p class="customer-role">CEO Surprise Plug</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Second Slide-->
+							<div class="swiper-slide">
+								<div class="testmonial-card d-flex align-items-center justify-content-center">
+									<div class="testimonial-content">
+										<div class="customer-img "><img class="img-fluid " loading="lazy"
+												src="assets/images/testimonials/customer2.jpeg" alt="First Slide "></div>
+										<div class="customer-testimonial">
+											<div class="content">
+												<p class="testimonial-text ">
+													This app allows great ease of usage.  My creation needs would be met quickly, the interface is also easy to navigate. I will definitely refer my colleagues to this platform.
+												</p>
+											</div>
+										</div>
+										<div class="customer-info ">
+											<div class="customer-details">
+												<p class="customer-name">Quam Hassan</p>
+												<p class="customer-role">Project Manager</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--navigation buttons-->
+						<div class="swiper-button-prev">
+							<div class="left-arrow"><i class="bi bi-chevron-left icon "></i>
+							</div>
+						</div>
+						<div class="swiper-button-next">
+							<div class="right-arrow"><i class="bi bi-chevron-right icon "></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End  testimonials Section-->
+	<!-- Start  faq Section-->
+	<section class="faq mega-section   " id="faq">
+		<div class="shape-top-left"></div>
+		<div class="shape-bottom-right"></div>
+		<div class="pattern-top-end-dir"></div>
+		<div class="pattern-bottom-start-dir"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-5 align-self-center">
+					<div class="faq-img start-dir-img-frame wow fadeIn" data-wow-delay="0.2s"><img class="img-fluid "
+							loading="lazy" src="assets/images/faq/faq-illustration.png" alt=""></div>
+				</div>
+				<div class="col-12 col-lg-7 ">
+					<div class="sec-heading  ">
+						<div class="content-area">
+							<h2 class=" title    wow fadeInUp" data-wow-delay=".2s"><span class='hollow-text'>frequently
+								</span> asked questions </h2>
+						</div>
+					</div>
+					<!--Start Accordion List For FAQ-->
+					<div class="faq-accordion " id="accordion">
+						<div class="card mb-2">
+							<div class="card-header " id="heading-1">
+								<h5 class="mb-0 faq-title">
+									<button class="btn btn-link  faq-btn  collapsed" data-bs-toggle="collapse"
+										data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">1. What is AIVidCreator?
+									</button>
+								</h5>
+							</div>
+							<div class="collapse " id="collapse-1" aria-labelledby="collapse-1"
+								data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="faq-answer">AIVidCreator is a powerful AI-based video creation tool designed to simplify the process of making engaging videos. It utilizes advanced AI algorithms to automate various aspects of video production, making it accessible to everyone, from beginners to professionals.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card mb-2">
+							<div class="card-header " id="heading-2">
+								<h5 class="mb-0 faq-title">
+									<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
+										data-bs-target="#collapse-2" aria-expanded="true"
+										aria-controls="collapse-2">How does AIVidCreator work?</button>
+								</h5>
+							</div>
+							<div class="collapse " id="collapse-2" aria-labelledby="collapse-2"
+								data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="faq-answer">AIVidCreator works by analyzing your input, such as text, images, and voiceovers, and then uses AI to generate video content. It can create animations, add text to videos, sync voiceovers, and much more, all in a matter of minutes.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card mb-2">
+							<div class="card-header " id="heading-3">
+								<h5 class="mb-0 faq-title">
+									<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
+										data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">What types of videos can I create with AIVidCreator?</button>
+								</h5>
+							</div>
+							<div class="collapse " id="collapse-3" aria-labelledby="collapse-3"
+								data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="faq-answer">AIVidCreator is versatile and can be used to create a wide range of videos, including explainer videos, marketing videos, educational content, product demos, social media clips, and more. </p>
+								</div>
+							</div>
+						</div>
+						<div class="card mb-2">
+							<div class="card-header " id="heading-4">
+								<h5 class="mb-0 faq-title">
+									<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
+										data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4"> Do I need any video editing skills to use AIVidCreator?</button>
+								</h5>
+							</div>
+							<div class="collapse " id="collapse-4" aria-labelledby="collapse-4"
+								data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="faq-answer">No, you don't need any prior video editing experience. AIVidCreator is designed to be user-friendly, with a simple interface that allows you to create professional-looking videos without any technical expertise.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card mb-2">
+							<div class="card-header " id="heading-4">
+								<h5 class="mb-0 faq-title">
+									<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
+										data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">Can I customize the videos created by AIVidCreator?</button>
+								</h5>
+							</div>
+							<div class="collapse " id="collapse-4" aria-labelledby="collapse-4"
+								data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="faq-answer">Absolutely! AIVidCreator offers customization options, allowing you to personalize your videos. You can adjust text, colors, animations, and even upload your own media to make your videos unique.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card mb-2">
+							<div class="card-header " id="heading-4">
+								<h5 class="mb-0 faq-title">
+									<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
+										data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">Is AIVidCreator suitable for businesses and marketers?</button>
+								</h5>
+							</div>
+							<div class="collapse " id="collapse-4" aria-labelledby="collapse-4"
+								data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="faq-answer">Yes, AIVidCreator is an excellent tool for businesses and marketers looking to create eye-catching video content for their products or services. It can save time and resources while producing high-quality videos for marketing campaigns.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card mb-2">
+							<div class="card-header " id="heading-4">
+								<h5 class="mb-0 faq-title">
+									<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
+										data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">Can I export and download the videos I create with AIVidCreator?</button>
+								</h5>
+							</div>
+							<div class="collapse " id="collapse-4" aria-labelledby="collapse-4"
+								data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="faq-answer">Yes, you can export and download your videos in various formats, making it easy to share them on social media, websites, or other platforms.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card mb-2">
+							<div class="card-header " id="heading-4">
+								<h5 class="mb-0 faq-title">
+									<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
+										data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">Are there any subscription plans available for AIVidCreator?</button>
+								</h5>
+							</div>
+							<div class="collapse " id="collapse-4" aria-labelledby="collapse-4"
+								data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="faq-answer">Yes, AIVidCreator offers various subscription plans to meet your needs, including free trials and premium plans with additional features. Visit our website to explore the available options.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card mb-2">
+							<div class="card-header " id="heading-4">
+								<h5 class="mb-0 faq-title">
+									<button class="btn btn-link  faq-btn  collapsed " data-bs-toggle="collapse"
+										data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">What are the system requirements for using AIVidCreator?</button>
+								</h5>
+							</div>
+							<div class="collapse " id="collapse-4" aria-labelledby="collapse-4"
+								data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="faq-answer">AIVidCreator is a web-based tool, so you only need a computer or device with an internet connection and a modern web browser to access and use it.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End  faq Section-->
+
+	<!-- Start Form Section-->
+	<section class="contact-us  mega-section  pb-0" id="contact-us">
+		<div class="container">
+			<section class="contact-us-form-section  mega-section  ">
+				<div class="row">
+					<div class="col-12 ">
+						<div class="contact-form-panel">
+							<div class="sec-heading centered    ">
+								<div class="content-area">
+									<h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Have any questions? Let's
+										answer them</h2>
+								</div>
+							</div>
+							<div class="contact-form-inputs wow fadeInUp" data-wow-delay=".6s">
+								<div class="custom-form-area input-boxed">
+									<!--Form To have user messages-->
+									<form class="main-form" id="contact-us-form" action="php/send-mail.php"
+										method="post"><span class="done-msg"></span>
+										<div class="row ">
+											<div class="col-12 col-lg-6">
+												<div class="   input-wrapper">
+													<input class="text-input" id="user-name" name="UserName"
+														type="text" />
+													<label class="input-label" for="user-name"> Name <span
+															class="req">*</span></label><span
+														class="b-border"></span><span class="error-msg"></span>
+												</div>
+											</div>
+											<div class="col-12 col-lg-6">
+												<div class="   input-wrapper">
+													<input class="text-input" id="user-email" name="UserEmail"
+														type="email" />
+													<label class="input-label" for="user-email"> E-mail <span
+															class="req">*</span></label><span
+														class="b-border"></span><span class="error-msg"></span>
+												</div>
+											</div>
+											<div class="col-12 ">
+												<div class="   input-wrapper">
+													<input class="text-input" id="msg-subject" name="subject"
+														type="text" />
+													<label class="input-label" for="msg-subject"> Subject <span
+															class="req">*</span></label><span
+														class="b-border"></span><span class="error-msg"></span>
+												</div>
+											</div>
+											<div class="col-12 ">
+												<div class="   input-wrapper">
+													<textarea class=" text-input" id="msg-text"
+														name="message"></textarea>
+													<label class="input-label" for="msg-text"> your message <span
+															class="req">*</span></label><span
+														class="b-border"></span><i></i><span class="error-msg"></span>
+												</div>
+											</div>
+											<div class="col-12 submit-wrapper">
+												<button class=" btn-solid" id="submit-btn" type="submit"
+													name="UserSubmit">Send your message</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="locations-section  mega-section ">
+				<div class="sec-heading centered  ">
+					<div class="content-area">
+						<h2 class=" title  wow fadeInUp" data-wow-delay=".4s">Our Contacts</h2>
+					</div>
+				</div>
+				<div class=" contact-info-panel ">
+					<div class="info-section ">
+						<div class="row">
+							<div class="col-12 col-lg-4">
+								<div class="info-panel  wow fadeInUp" data-wow-delay=".4s ">
+									<h4 class="location-title">Let's have a meeting:</h4>
+									<div class="line-on-side "> </div>
+									<div class="location-card  "><i class="flaticon-email icon"></i>
+										<div class="card-content">
+											<h6 class="content-title">email:</h6><a class="email link"
+												href="mailto:yourname@example.com">info@example.com</a>
+										</div>
+									</div>
+									<div class="location-card  "><i class="flaticon-phone-call icon"></i>
+										<div class="card-content">
+											<h6 class="content-title">phone:</h6><a class="tel link"
+												href="tel:0123456789">+29876543210</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<!-- End  blog Section-->
+	<!-- Start  page-footer Section-->
+	<footer class="page-footer dark-color-footer" id="page-footer">
+		<div class="overlay-photo-image-bg" data-bg-img="assets/images/sections-bg-images/footer-bg-1.jpg"
+			data-bg-opacity=".25"></div>
+		<div class="container">
+			<div class="row footer-cols mt-5">
+				<div class="col-12 col-md-8 col-lg-4  footer-col ">
+					<img class="img-fluid footer-logo w-25 h-25" loading="lazy" src="assets/images/logo/logo-white.png"
+						alt="logo" />
+					<div class="footer-col-content-wrapper">
+						<p class="footer-text-about-us">
+							Unlock the true potential of video creation with AIVidCreator—an innovative platform designed to empower your visual storytelling. As we stand at the forefront of AI-driven technology, we're committed to redefining the way you craft, share, and connect through videos.
+						</p>
+					</div>
+					<div class="form-area ">
+						<div class="mailchimp-form ">
+							<form class="one-field-form" method="post" action="#0">
+								<div class="field-group ">
+									<label class="email-label" for="email-input"> Subscribe to our newsletter</label>
+									<input class="email-input " type="email" value="" name="EMAIL" id="email-input"
+										placeholder="Email Address" autocomplete="off" />
+									<div class="cta-area">
+										<input class="btn-solid subscribe-btn" type="submit" value="Subscribe"
+											name="subscribe" />
+									</div>
+								</div><span class="email-notice">*we will not share your personal info</span>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-lg-2 footer-col mt-5">
+					<h2 class="footer-col-title">useful links</h2>
+					<div class="footer-col-content-wrapper">
+						<ul class="footer-menu ">
+							<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+									class="footer-menu-link" href="#0">Google</a>
+							</li>
+							<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+									class="footer-menu-link" href="#0">Dribbble</a>
+							</li>
+							<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+									class="footer-menu-link" href="#0">linkedIn</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-6 col-lg-2 footer-col mt-5">
+					<h2 class=" footer-col-title    ">Resources</h2>
+					<div class="footer-col-content-wrapper">
+						<ul class="footer-menu">
+							<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+									class="footer-menu-link" href="#0">support</a>
+							</li>
+							<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+									class="footer-menu-link" href="#0">dashboard</a>
+							</li>
+							<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+									class="footer-menu-link" href="#0">drivers</a>
+							</li>
+							<li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a
+									class="footer-menu-link" href="#0">projects</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4 footer-col mt-5">
+					<h2 class=" footer-col-title">contact information</h2>
+					<div class="footer-col-content-wrapper">
+						<div class="contact-info-card"><i class="bi bi-envelope icon"></i><a
+								class="text-lowercase  info" href="mailto:example@support.com">example@support.com</a>
+						</div>
+						<div class="contact-info-card"><i class="bi bi-geo-alt icon"></i><span class="info">AIVidCreator</span></div>
+						<div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info"
+								href="tel:+20123456789">+20123456789 </a></div>
+						<div class="contact-info-card">
+							<div class="social-icons">
+								<div class="sc-wrapper dir-row sc-size-32">
+									<ul class="sc-list">
+										<li class="sc-item " title="Facebook"><a class="sc-link" href="#0"
+												title="social media icon"><i class="fab fa-facebook-f sc-icon"></i></a>
+										</li>
+										<li class="sc-item " title="youtube"><a class="sc-link" href="#0"
+												title="social media icon"><i class="fab fa-youtube sc-icon"></i></a>
+										</li>
+										<li class="sc-item " title="instagram"><a class="sc-link" href="#0"
+												title="social media icon"><i class="fab fa-instagram sc-icon"></i></a>
+										</li>
+										<li class="sc-item " title="twitter"><a class="sc-link" href="#0"
+												title="social media icon"><i class="fab fa-twitter sc-icon"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyrights ">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-6 d-flex justify-content-start">
+						<p class="credits">
+							&copy; 2023
+							All rights reserved to
+							<a class="link" href="#0">AIVidCreator</a>
+						</p>
+					</div>
+					<div class="col-12 col-md-6 d-flex justify-content-end">
+						<div class="terms-links"><a href="#0">Terms of Use </a>
+							| <a href="#0">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End  page-footer Section-->
+	<!-- Start loading-screen Component-->
+	<div class="loading-screen" id="loading-screen"><span class="bar top-bar"></span><span
+			class="bar down-bar"></span><span class="progress-line"></span><span class="loading-counter"> </span></div>
+	<!-- End loading-screen Component-->
+	<!-- Start back-to-top Component-->
+	<div class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up icon "></i>
+	</div>
+	<!-- End back-to-top Component-->
+	<!--     JQuery     -->
+	<script src="js/vendors/jquery-3.6.1.min.js"></script>
+	<!--     appear     -->
+	<script src="js/vendors/appear.min.js"></script>
+	<!--     bootstrap     -->
+	<script src="js/vendors/bootstrap.bundle.min.js"></script>
+	<!--     countTo     -->
+	<script src="js/vendors/jquery.countTo.js"></script>
+	<!--     wow     -->
+	<script src="js/vendors/wow.min.js"></script>
+	<!--     swiper     -->
+	<script src="js/vendors/swiper-bundle.min.js"></script>
+	<!--     particles     -->
+	<script src="js/vendors/particles.min.js"></script>
+	<!--     Vanilla-tilt     -->
+	<script src="js/vendors/vanilla-tilt.min.js"></script>
+	<!--     isotope     -->
+	<script src="js/vendors/isotope-min.js"></script>
+	<!--     fancybox     -->
+	<script src="js/vendors/jquery.fancybox.min.js"></script>
+	<!--     main     -->
+	<script src="js/main.js"></script>
+</body>
+
+</html>

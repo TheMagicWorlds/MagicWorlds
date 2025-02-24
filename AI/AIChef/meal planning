@@ -1,0 +1,47 @@
+# Sample data structure for meals and their ingredients
+recipes = {
+    "Spaghetti Bolognese": ["spaghetti", "ground beef", "tomato sauce", "onion", "garlic"],
+    "Chicken Salad": ["chicken breast", "lettuce", "tomatoes", "cucumber", "olive oil", "lemon"],
+    "Vegetable Stir Fry": ["bell peppers", "broccoli", "carrot", "soy sauce", "ginger", "garlic"],
+    "Pancakes": ["flour", "milk", "eggs", "sugar", "baking powder", "butter"]
+}
+
+def display_menu():
+    print("Available Recipes:")
+    for i, recipe in enumerate(recipes.keys(), 1):
+        print(f"{i}. {recipe}")
+
+def select_meals():
+    print("\nPlan your weekly meals:")
+    weekly_meals = []
+    for day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]:
+        display_menu()
+        choice = int(input(f"Choose a recipe for {day} (Enter the recipe number): "))
+        selected_recipe = list(recipes.keys())[choice - 1]
+        weekly_meals.append(selected_recipe)
+        print(f"{day}: {selected_recipe}")
+    return weekly_meals
+
+def generate_shopping_list(weekly_meals):
+    shopping_list = []
+    for meal in weekly_meals:
+        ingredients = recipes[meal]
+        for ingredient in ingredients:
+            if ingredient not in shopping_list:
+                shopping_list.append(ingredient)
+    return shopping_list
+
+# Main program
+def main():
+    weekly_meals = select_meals()
+    print("\nYour Weekly Meal Plan:")
+    for day, meal in zip(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], weekly_meals):
+        print(f"{day}: {meal}")
+
+    shopping_list = generate_shopping_list(weekly_meals)
+    print("\nGenerated Shopping List:")
+    for item in shopping_list:
+        print(f"- {item}")
+
+if __name__ == "__main__":
+    main()

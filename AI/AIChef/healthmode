@@ -1,0 +1,54 @@
+# Sample recipes database with nutritional info for each recipe
+recipes = [
+    {
+        "name": "Grilled Chicken Salad",
+        "ingredients": ["chicken breast", "lettuce", "tomato", "cucumber", "olive oil"],
+        "calories": 350,
+        "protein": 30,  # grams
+        "carbs": 10,    # grams
+        "fats": 15      # grams
+    },
+    {
+        "name": "Avocado Smoothie",
+        "ingredients": ["avocado", "almond milk", "banana", "spinach"],
+        "calories": 200,
+        "protein": 5,
+        "carbs": 20,
+        "fats": 10
+    },
+    {
+        "name": "High-Protein Pancakes",
+        "ingredients": ["protein powder", "oats", "banana", "egg whites"],
+        "calories": 400,
+        "protein": 25,
+        "carbs": 40,
+        "fats": 8
+    },
+    {
+        "name": "Vegan Buddha Bowl",
+        "ingredients": ["quinoa", "chickpeas", "spinach", "sweet potato"],
+        "calories": 450,
+        "protein": 15,
+        "carbs": 50,
+        "fats": 15
+    }
+]
+
+# Define function to filter recipes based on health goals
+def filter_recipes_by_goal(recipes, health_goal):
+    filtered_recipes = []
+    
+    for recipe in recipes:
+        # Define filtering logic based on health goal
+        if health_goal == "weight loss":
+            # Look for low-calorie recipes (e.g., under 300 calories)
+            if recipe["calories"] <= 300:
+                filtered_recipes.append(recipe)
+        
+        elif health_goal == "muscle gain":
+            # Look for high-protein recipes (e.g., over 20 grams of protein)
+            if recipe["protein"] >= 20:
+                filtered_recipes.append(recipe)
+        
+        elif health_goal == "general wellness":
+            # Look for balanced recipes (reasonable calories, protein, carbs, fats)
