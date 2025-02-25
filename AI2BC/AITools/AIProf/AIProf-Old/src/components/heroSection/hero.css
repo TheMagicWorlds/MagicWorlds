@@ -1,0 +1,39 @@
+#hero-image img {
+  height: 500px;
+}
+
+#hero-description {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  margin-top: 100px;
+}
+
+#hero-description h4 {
+  font-weight: 300;
+}
+
+#hero-video {
+  width: 40%;
+}
+
+#video-thumb img {
+  width: 300px;
+}
+
+#hero-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#hero-bottom img {
+  width: 80%;
+  height: 160px;
+}
+
+.hbDescription {
+  text-align: start;
+  padding-left: 2rem;
+}

@@ -1,0 +1,26 @@
+#vla-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: start;
+}
+
+#right-block {
+  text-align: left;
+  padding: 50px;
+}
+
+.hr-block {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-hr {
+  width: 20%;
+  height: 3px;
+  background-color: #2196f3;
+}
+
+#left-block img {
+  width: 60%;
+}

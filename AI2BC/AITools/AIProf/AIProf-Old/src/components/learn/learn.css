@@ -1,0 +1,21 @@
+#feedback-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#fConternt-container {
+  display: flex;
+  justify-content: center;
+}
+
+.fcontent {
+  text-align: start;
+  width: 30%;
+}
+
+.author {
+  color: gray;
+  font-weight: 600;
+}
