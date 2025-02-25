@@ -1,0 +1,51 @@
+import speech_recognition as sr
+import pyttsx3
+import time
+
+# Sample recipe
+recipe = {
+    "name": "Tomato Soup",
+    "steps": [
+        {"instruction": "Heat oil in a pot.", "time": 60},
+        {"instruction": "Add chopped onions and cook for 5 minutes.", "time": 5 * 60},
+        {"instruction": "Add tomatoes and simmer for 10 minutes.", "time": 10 * 60},
+        {"instruction": "Blend and serve hot.", "time": 0}
+    ]
+}
+
+# Initialize Text-to-Speech engine
+engine = pyttsx3.init()
+
+# Function to convert text to speech
+def speak(text):
+    engine.say(text)
+    engine.runAndWait()
+
+# Function to listen for voice commands
+def listen():
+    recognizer = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Listening for your command...")
+        audio = recognizer.listen(source)
+        try:
+            command = recognizer.recognize_google(audio).lower()
+            print(f"Command recognized: {command}")
+            return command
+        except sr.UnknownValueError:
+            print("Sorry, I didn't understand that.")
+            return None
+        except sr.RequestError:
+            print("Error with the recognition service.")
+            return None
+
+# Function to start step-by-step mode with voice control
+def hands_free_mode(recipe):
+    speak(f"Starting recipe: {recipe['name']}")
+    step_index = 0
+
+    while step_index < len(recipe["steps"]):
+        step = recipe["steps"][step_index]
+        speak(f"Step {step_index + 1}: {step['instruction']}")
+
+        # Start timer if the step has a specified time
+        if step["time"] > 0:

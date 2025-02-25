@@ -1,0 +1,51 @@
+# Sample recipes with calorie and nutrient information
+recipes = {
+    "Grilled Chicken Salad": {
+        "calories": 350,
+        "protein": 30,  # grams
+        "carbs": 10,    # grams
+        "fats": 15      # grams
+    },
+    "Avocado Smoothie": {
+        "calories": 200,
+        "protein": 5,
+        "carbs": 20,
+        "fats": 10
+    },
+    "High-Protein Pancakes": {
+        "calories": 400,
+        "protein": 25,
+        "carbs": 40,
+        "fats": 8
+    },
+    "Vegan Buddha Bowl": {
+        "calories": 450,
+        "protein": 15,
+        "carbs": 50,
+        "fats": 15
+    }
+}
+
+# Function to log recipes and calculate total intake
+def track_calories_nutrients(selected_recipes):
+    # Initialize totals for calories and nutrients
+    total_calories = 0
+    total_protein = 0
+    total_carbs = 0
+    total_fats = 0
+    
+    # Loop through selected recipes and add their values to the totals
+    for recipe_name in selected_recipes:
+        recipe = recipes.get(recipe_name)
+        if recipe:
+            total_calories += recipe["calories"]
+            total_protein += recipe["protein"]
+            total_carbs += recipe["carbs"]
+            total_fats += recipe["fats"]
+    
+    # Display daily total intake
+    print("Today's Total Nutrient Intake:")
+    print(f"Calories: {total_calories} kcal")
+    print(f"Protein: {total_protein} g")
+    print(f"Carbohydrates: {total_carbs} g")
+    print(f"Fats: {total_fats} g")
