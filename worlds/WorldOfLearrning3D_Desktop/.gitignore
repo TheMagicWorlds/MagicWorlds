@@ -1,6 +1,0 @@
-# Godot 4+ specific ignores
-.godot/
-*.tmp
-
-# Finder folder settings
-**/.DS_Store
