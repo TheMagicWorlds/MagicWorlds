@@ -1,0 +1,21 @@
+#navMenuContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding-right: 2rem;
+}
+
+#navLogo img {
+  height: 70px;
+}
+
+#menu-container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#menu-container ul li {
+  list-style: none;
+}

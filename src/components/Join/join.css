@@ -1,0 +1,25 @@
+
+#join-section {
+  margin-top: 50px;
+}
+
+#js-title h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+#js-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: end;
+}
+
+#js-content h3 {
+  background: none repeat scroll 0% 0% #009688;
+  color: white;
+  padding: 0.5rem 2rem;
+  width: 100px;
+  text-align: center;
+  margin-top: unset;
+}
