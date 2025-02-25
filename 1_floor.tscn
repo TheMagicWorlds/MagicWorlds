@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ubpxrugnao1s"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0wd8e"]
+size = Vector3(30, 0.5, 30)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ijqsf"]
+points = PackedVector3Array(-15, -0.25, -15, -15, 0.25, -15, 15, -0.25, -15, -15, -0.25, 15, -15, 0.25, 15, 15, 0.25, -15, 15, -0.25, 15, 15, 0.25, 15)
+
+[node name="1_Floor" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_0wd8e")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_ijqsf")
