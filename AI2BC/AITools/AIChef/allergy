@@ -1,0 +1,39 @@
+# Define some sample recipes and their ingredients
+recipes = [
+    {
+        "name": "Peanut Butter Cookies",
+        "ingredients": ["peanuts", "flour", "sugar", "butter"]
+    },
+    {
+        "name": "Chicken Caesar Salad",
+        "ingredients": ["chicken", "lettuce", "croutons", "parmesan", "anchovies"]
+    },
+    {
+        "name": "Gluten-Free Pancakes",
+        "ingredients": ["gluten-free flour", "milk", "eggs", "syrup"]
+    },
+    {
+        "name": "Vegan Tacos",
+        "ingredients": ["tortilla", "beans", "lettuce", "tomato", "onion"]
+    }
+]
+
+# Define a function to filter recipes based on allergies
+def filter_recipes_by_allergy(recipes, allergies):
+    filtered_recipes = []
+    for recipe in recipes:
+        # Check if any ingredient in the recipe is in the user's list of allergies
+        if not any(allergen in recipe["ingredients"] for allergen in allergies):
+            filtered_recipes.append(recipe)
+    return filtered_recipes
+
+# Get user allergies as input (for testing, use a predefined list)
+user_allergies = ["peanuts", "milk"]
+
+# Filter recipes based on user allergies
+safe_recipes = filter_recipes_by_allergy(recipes, user_allergies)
+
+# Display safe recipes
+print("Recipes safe for you to try:")
+for recipe in safe_recipes:
+    print(recipe["name"])
