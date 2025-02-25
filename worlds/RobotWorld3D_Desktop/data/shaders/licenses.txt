@@ -1,5 +1,0 @@
-Attributions for /data/shaders:
-
-	water.gdshader:
-	by StayAtHomeDev
-	from https://stayathomedev.com/tutorials/single-plane-water-shader/
