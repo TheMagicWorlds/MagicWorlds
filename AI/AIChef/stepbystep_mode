@@ -1,0 +1,43 @@
+import time
+
+# Sample recipe with steps and timings
+recipe = {
+    "name": "Pasta Primavera",
+    "steps": [
+        {"instruction": "Boil water in a large pot.", "time": 0},            # 0 seconds (no timer needed)
+        {"instruction": "Add pasta to boiling water and cook for 8 minutes.", "time": 8 * 60},
+        {"instruction": "Drain pasta and set aside.", "time": 0},
+        {"instruction": "Heat olive oil in a pan over medium heat.", "time": 60}, # 1 minute
+        {"instruction": "Add vegetables and sauté for 5 minutes.", "time": 5 * 60},
+        {"instruction": "Combine pasta and vegetables, then cook for 2 more minutes.", "time": 2 * 60},
+        {"instruction": "Serve hot and enjoy!", "time": 0}
+    ]
+}
+
+# Step-by-step mode function
+def step_by_step_mode(recipe):
+    print(f"Starting recipe: {recipe['name']}\n")
+    for index, step in enumerate(recipe["steps"], start=1):
+        # Display each instruction
+        print(f"Step {index}: {step['instruction']}")
+        
+        # If the step has a timer, start countdown
+        if step["time"] > 0:
+            minutes, seconds = divmod(step["time"], 60)
+            print(f"Timer: {minutes} minutes and {seconds} seconds.")
+            # Countdown timer
+            while step["time"]:
+                mins, secs = divmod(step["time"], 60)
+                time_display = f'{mins:02d}:{secs:02d}'
+                print(f"{time_display}", end="\r")  # Display countdown in real-time
+                time.sleep(1)
+                step["time"] -= 1
+            print("Time's up!\n")
+        else:
+            print("No timer needed for this step.\n")
+        
+        # Pause between steps for user readiness
+        input("Press Enter to proceed to the next step...\n")
+
+# Run step-by-step mode for the recipe
+step_by_step_mode(recipe)
