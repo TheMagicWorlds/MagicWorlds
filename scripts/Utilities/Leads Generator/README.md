@@ -2,7 +2,6 @@
 # **📌 Step-by-Step Guide to Running the Leads Generator**
 
 ## **1️⃣ Prerequisites**
-- **Google API Key** (to use Google Search)
 - **LinkedHelper Software** (for email extraction)
 
 ---
