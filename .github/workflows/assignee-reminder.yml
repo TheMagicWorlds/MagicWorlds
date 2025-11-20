@@ -1,0 +1,31 @@
+name: New Task Assignment Reminder
+
+on:
+  # This tells the action to run ONLY when an issue is assigned.
+  issues:
+    types: [assigned]
+
+jobs:
+  post-reminder-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post Workflow Reminder Comment
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          # This automatically gets the number of the issue that was just assigned.
+          issue-number: ${{ github.event.issue.number }}
+          # This is the message that will be posted. We are tagging the new assignee.
+          body: |
+            Hi @${{ github.event.assignee.login }}, welcome to the task!
+
+            As a reminder, here is our rapid development workflow for every task:
+            > **USE AI: 30 MINS PER DAY**
+            > 1.  **FOCUS DAY:** Understand the goal.
+            > 2.  **BRAINSTORM:** Use AI to explore solutions.
+            > 3.  **SELECT:** Select a task or world to improve
+            > 4.  **POC PROTOTYPE:** Build a quick proof-of-concept.
+            > 5.  **TEST:** Get user feedback.
+            > 6.  **DEMO:** Present results to stakeholders.
+            > 7.  **PUSH LIVE, GET REWARD & REPLAN:** Ship it and plan the next iteration.
+
+            Let's make some magic!
